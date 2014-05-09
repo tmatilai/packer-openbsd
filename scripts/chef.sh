@@ -2,7 +2,13 @@ if [ x$CHEF_VERSION = x'provisionerless' ]; then
   echo "Building a box without Chef"
 else
   . /root/.profile
-  pkg_add ruby-1.9.3.448
+
+  # OpenBSD 5.5 has .484p0, 5.4 has .448
+  if [ `uname -r` = 5.5 ]; then
+    pkg_add ruby-1.9.3.484p0
+  else
+    pkg_add ruby-1.9.3.448
+  fi
 
   for f in ruby erb irb rdoc ri rake gem testrb \
            chef-apply chef-client chef-shell chef-solo chef-zero \
