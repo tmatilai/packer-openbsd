@@ -4,7 +4,6 @@ This repository contains templates for building OpenBSD boxes for
 [Vagrant](http://www.vagrantup.com) using [Packer](http://packer.io).
 
 Pre-built boxes can be installed via [Vagrant Cloud](https://vagrantcloud.com):
-
 ```
 vagrant box add tmatilai/openbsd-5.4
 ```
@@ -13,6 +12,11 @@ You can also build the boxes yourself:
 ```
 packer build openbsd-<version>.json
 ```
+
+The boxes won't include VirtualBox Guest Additions nor VMware Tool
+(as they are not available for the OS). So for synced folders you need to use
+e.g. [NFS](https://docs.vagrantup.com/v2/synced-folders/nfs) or
+[rsync](https://docs.vagrantup.com/v2/synced-folders/rsync).
 
 ## License
 
