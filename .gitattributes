@@ -1,0 +1,5 @@
+# Detect text files automatically
+* text=auto
+
+# Force LF line ending on these files
+/scripts/*.sh eol=lf
