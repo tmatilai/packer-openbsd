@@ -80,7 +80,7 @@
         [ "modifyvm", "{{.Name}}", "--cpus", "1" ]
       ],
       "virtualbox_version_file": ".vbox_version",
-      "vm_name": "packer-openbsd-5.5-amd64"
+      "vm_name": "openbsd-5.5-amd64"
     },
     {
       "type": "vmware-iso",
@@ -137,7 +137,7 @@
       "ssh_port": 22,
       "ssh_wait_timeout": "10000s",
       "shutdown_command": "/sbin/halt -p",
-      "vm_name": "packer-openbsd-5.5-amd64",
+      "vm_name": "openbsd-5.5-amd64",
       "vmx_data": {
         "memsize": "384",
         "numvcpus": "1",
@@ -148,7 +148,7 @@
   "post-processors": [
     {
       "type": "vagrant",
-      "output": "../builds/{{.Provider}}/openbsd-5.5-amd64_chef-{{user `chef_version`}}.box",
+      "output": "openbsd-5.5-amd64-{{.Provider}}.box",
       "vagrantfile_template": "vagrantfiles/openbsd"
     }
   ]
