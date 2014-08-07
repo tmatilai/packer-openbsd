@@ -40,7 +40,6 @@
         "vagrant<enter><wait>",
         "vagrant<enter><wait>",
         "no<enter><wait>",
-        "UTC<enter><wait>",
         "<enter><wait>",
         "yes<enter><wait>",
         "W<enter><wait>",
@@ -59,6 +58,7 @@
         "yes<enter><wait10>",
         "<wait10><wait10><wait10>",
         "done<enter><wait>",
+        "UTC<enter><wait>",
         "yes<enter><wait5>",
         "reboot<enter>"
       ],
