@@ -7,5 +7,8 @@ echo "export PKG_PATH=\"$PKG_PATH\"" >> /home/vagrant/.profile
 # install wget/curl
 pkg_add wget curl
 
+#install the normal flavour of `rsync`
+pkg_add -v rsync--
+
 # sudo
 echo "vagrant ALL=(ALL) NOPASSWD: SETENV: ALL" >> /etc/sudoers
