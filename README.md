@@ -8,6 +8,7 @@ Pre-built boxes can be installed via [Vagrant Cloud](https://vagrantcloud.com/se
 ```
 vagrant box add tmatilai/openbsd-5.5
 vagrant box add tmatilai/openbsd-5.4
+vagrant box add tmatilai/openbsd-5.6
 ```
 
 You can also build the boxes yourself:

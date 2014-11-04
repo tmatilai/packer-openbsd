@@ -3,8 +3,11 @@ if [ x$CHEF_VERSION = x'provisionerless' ]; then
 else
   . /root/.profile
 
-  # OpenBSD 5.5 has .484p0, 5.4 has .448
-  if [ `uname -r` = 5.5 ]; then
+  uname_r=`uname -r`
+  # OpenBSD 5.6 has .545p0, 5.5 has .484p0, 5.4 has .448
+  if [ $uname_r = 5.6 ]; then
+    pkg_add ruby-1.9.3.545p0
+  elif [ $uname_r = 5.5 ]; then
     pkg_add ruby-1.9.3.484p0
   else
     pkg_add ruby-1.9.3.448
