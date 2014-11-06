@@ -31,6 +31,7 @@
         "echo 'Since you set up a user, disable sshd(8) logins to root = no' >>install.conf<enter>",
         "echo 'What timezone are you in = UTC' >>install.conf<enter>",
         "echo 'Location of sets = cd' >>install.conf<enter>",
+        "echo 'Set name(s) = -game*.tgz -x*.tgz' >>install.conf<enter>",
         "echo 'Directory does not contain SHA256.sig. Continue without verification = yes' >>install.conf<enter>",
         "install -af install.conf && reboot<enter>"
       ],
@@ -65,6 +66,7 @@
         "echo 'Since you set up a user, disable sshd(8) logins to root = no' >>install.conf<enter>",
         "echo 'What timezone are you in = UTC' >>install.conf<enter>",
         "echo 'Location of sets = cd' >>install.conf<enter>",
+        "echo 'Set name(s) = -game*.tgz -x*.tgz' >>install.conf<enter>",
         "echo 'Directory does not contain SHA256.sig. Continue without verification = yes' >>install.conf<enter>",
         "install -af install.conf && reboot<enter>"
       ],
