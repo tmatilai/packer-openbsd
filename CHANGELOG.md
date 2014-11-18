@@ -1,3 +1,10 @@
+# 2014-11-18
+
+## OpenBSD 5.6 - 1.0.0
+
+- Add templates for OpenBSD 5.6 (@carletes, @zigg)
+- Use rsync for the default "/vagrant" synced_folder (@zigg)
+
 # 2014-05-10
 
 ## OpenBSD 5.5 - 1.0.0
