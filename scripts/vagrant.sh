@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
+set -e
 
 mkdir -p /home/vagrant/.ssh
 wget --no-check-certificate \

@@ -1,3 +1,7 @@
+#!/bin/sh
+
+set -e
+
 if [ x$CHEF_VERSION = x'provisionerless' ]; then
   echo "Building a box without Chef"
 else

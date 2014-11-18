@@ -1,3 +1,7 @@
+#!/bin/sh
+
+set -e
+
 export PKG_PATH="$MIRROR/pub/OpenBSD/`uname -r`/packages/`arch -s`/"
 
 # set pkg path for users
