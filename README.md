@@ -6,9 +6,9 @@ Supports VirtualBox and VMware providers.
 
 Pre-built boxes can be installed via [Vagrant Cloud](https://vagrantcloud.com/search?q=tmatilai%2Fopenbsd):
 ```
+vagrant box add tmatilai/openbsd-5.6
 vagrant box add tmatilai/openbsd-5.5
 vagrant box add tmatilai/openbsd-5.4
-vagrant box add tmatilai/openbsd-5.6
 ```
 
 You can also build the boxes yourself:
