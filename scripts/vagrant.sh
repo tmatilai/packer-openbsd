@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir /home/vagrant/.ssh
+mkdir -p /home/vagrant/.ssh
 wget --no-check-certificate \
     'https://github.com/mitchellh/vagrant/raw/master/keys/vagrant.pub' \
     -O /home/vagrant/.ssh/authorized_keys
