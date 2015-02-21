@@ -7,15 +7,15 @@ if [ x$VAGRANT_ANSIBLE = x'yes' ]; then
 
 	uname_r=`uname -r`
 	if [ $uname_r = 5.6 ]; then
-		pkg_add python-3.4.1
+		pkg_add python-2.7.8
 	elif [ $uname_r = 5.5 ]; then
-		pkg_add python-3.3.2p1
+		pkg_add python-2.7.6p0
 	elif [ $uname_r = 5.4 ]; then
-		pkg_add python-3.3.2
+		pkg_add python-2.7.5
 	else
 		echo "Did not recognise OpenBSD version."
 		exit 1
 	fi
 else
-	echo "Building a box without Python 3 (Ansible)"
+	echo "Building a box without Python 2 (Ansible)"
 fi
