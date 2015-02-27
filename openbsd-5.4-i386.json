@@ -1,18 +1,21 @@
 {
   "variables": {
     "chef_version": "provisionerless",
-    "mirror": "http://ftp.openbsd.org"
+    "mirror": "http://ftp.openbsd.org",
+    "vagrant_ansible": "no"
   },
   "provisioners": [
     {
       "environment_vars": [
         "CHEF_VERSION={{user `chef_version`}}",
-        "MIRROR={{user `mirror`}}"
+        "MIRROR={{user `mirror`}}",
+        "VAGRANT_ANSIBLE={{user `vagrant_ansible`}}"
       ],
       "type": "shell",
       "scripts": [
         "scripts/postinstall.sh",
         "scripts/vagrant.sh",
+        "scripts/ansible.sh",
         "scripts/chef.sh",
         "scripts/minimize.sh"
       ],

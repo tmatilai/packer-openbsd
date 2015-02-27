@@ -4,7 +4,8 @@
     "ftp_proxy": "{{env `ftp_proxy`}}",
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
-    "mirror": "http://ftp.openbsd.org"
+    "mirror": "http://ftp.openbsd.org",
+    "vagrant_ansible": "no"
   },
   "provisioners": [
     {
@@ -13,12 +14,14 @@
         "MIRROR={{user `mirror`}}",
         "ftp_proxy={{user `ftp_proxy`}}",
         "http_proxy={{user `http_proxy`}}",
-        "https_proxy={{user `https_proxy`}}"
+        "https_proxy={{user `https_proxy`}}",
+        "VAGRANT_ANSIBLE={{user `vagrant_ansible`}}"
       ],
       "type": "shell",
       "scripts": [
         "scripts/postinstall.sh",
         "scripts/vagrant.sh",
+        "scripts/ansible.sh",
         "scripts/chef.sh",
         "scripts/minimize.sh"
       ],
