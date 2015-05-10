@@ -1,3 +1,9 @@
+# 2015-05-07
+
+## OpenBSD 5.7 - 1.0.0
+
+- Add templates for OpenBSD 5.7 (@bodgit)
+
 # 2014-11-18
 
 ## OpenBSD 5.6 - 1.0.0
