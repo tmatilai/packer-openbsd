@@ -5,7 +5,9 @@
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
     "mirror": "http://ftp.openbsd.org",
-    "vagrant_ansible": "no"
+    "vagrant_ansible": "no",
+    "atlas_box_name": "tmatilai/openbsd-5.7",
+    "atlas_box_version": "1.0.0"
   },
   "provisioners": [
     {
@@ -142,6 +144,40 @@
       "type": "vagrant",
       "output": "openbsd-5.7-amd64-{{.Provider}}.box",
       "vagrantfile_template": "vagrantfiles/openbsd"
+    },
+    {
+      "type": "atlas",
+      "only": ["virtualbox-iso"],
+      "artifact": "{{user `atlas_box_name`}}",
+      "artifact_type": "vagrant.box",
+      "metadata": {
+        "provider": "virtualbox",
+        "version": "{{user `atlas_box_version`}}"
+      }
+    },
+    {
+      "type": "atlas",
+      "only": ["vmware-iso"],
+      "artifact": "{{user `atlas_box_name`}}",
+      "artifact_type": "vagrant.box",
+      "metadata": {
+        "provider": "vmware_desktop",
+        "version": "{{user `atlas_box_version`}}"
+      }
+    },
+    {
+      "type": "atlas",
+      "only": ["qemu"],
+      "artifact": "{{user `atlas_box_name`}}",
+      "artifact_type": "vagrant.box",
+      "metadata": {
+        "provider": "libvirt",
+        "version": "{{user `atlas_box_version`}}"
+      }
     }
-  ]
+  ],
+  "push": {
+    "name": "",
+    "vcs": true
+  }
 }
