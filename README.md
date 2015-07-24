@@ -4,7 +4,7 @@ This repository contains templates for building OpenBSD boxes for
 [Vagrant](http://www.vagrantup.com) using [Packer](http://packer.io).
 Supports VirtualBox, VMware, and QEMU/libvirt providers.
 
-Pre-built boxes can be installed via [Vagrant Cloud](https://vagrantcloud.com/search?q=tmatilai%2Fopenbsd):
+Pre-built boxes can be installed via [Hashicorp Atlas](https://atlas.hashicorp.com/search?q=tmatilai%2Fopenbsd):
 ```
 vagrant box add tmatilai/openbsd-5.7
 vagrant box add tmatilai/openbsd-5.6
