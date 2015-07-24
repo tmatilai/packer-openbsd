@@ -5,6 +5,10 @@
 - Add templates for OpenBSD 5.7 (@bodgit)
 - Add builder for QEMU/libvirt (@thypon)
 
+## OpenBSD 5.6 - 1.1.0
+
+- Add builder for QEMU/libvirt (@thypon)
+
 # 2014-11-18
 
 ## OpenBSD 5.6 - 1.0.0
