@@ -7,7 +7,7 @@
     "mirror": "http://ftp.openbsd.org",
     "vagrant_ansible": "no",
     "atlas_box_name": "tmatilai/openbsd-5.7",
-    "atlas_box_version": "1.0.0"
+    "atlas_box_version": "1.0.1"
   },
   "provisioners": [
     {
