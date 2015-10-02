@@ -1,3 +1,13 @@
+# 2015-10-02
+
+## OpenBSD 5.7 - 1.0.2
+
+- Rebuild to fix the package in Atlas
+
+## OpenBSD 5.6 - 1.1.1
+
+- Rebuild to fix the package in Atlas
+
 # 2015-07-24
 
 ## OpenBSD 5.7 - 1.0.0
