@@ -7,7 +7,7 @@
     "mirror": "http://ftp.openbsd.org",
     "vagrant_ansible": "no",
     "atlas_box_name": "tmatilai/openbsd-5.7",
-    "atlas_box_version": "1.0.1"
+    "atlas_box_version": "1.0.2"
   },
   "provisioners": [
     {
@@ -140,7 +140,7 @@
     }
   ],
   "post-processors": [
-    {
+    [{
       "type": "vagrant",
       "output": "openbsd-5.7-amd64-{{.Provider}}.box",
       "vagrantfile_template": "vagrantfiles/openbsd"
@@ -174,7 +174,7 @@
         "provider": "libvirt",
         "version": "{{user `atlas_box_version`}}"
       }
-    }
+    }]
   ],
   "push": {
     "name": "",
