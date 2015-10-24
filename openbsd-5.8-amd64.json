@@ -22,7 +22,7 @@
       "type": "shell",
       "scripts": [
         "scripts-5.8/postinstall.sh",
-        "scripts-5.8/ansible.sh",
+        "scripts/ansible.sh",
         "scripts/chef.sh",
         "scripts/minimize.sh"
       ],
