@@ -1,3 +1,9 @@
+# _Not released yet_
+
+## OpenBSD 5.8 - 1.0.0
+
+- Add templates for OpenBSD 5.8 (@dentarg)
+
 # 2015-10-02
 
 ## OpenBSD 5.7 - 1.0.2
