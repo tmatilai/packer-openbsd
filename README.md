@@ -16,9 +16,6 @@ Older:
 
 ```
 vagrant box add tmatilai/openbsd-5.7
-vagrant box add tmatilai/openbsd-5.6
-vagrant box add tmatilai/openbsd-5.5
-vagrant box add tmatilai/openbsd-5.4
 ```
 
 You can also build the boxes yourself:
