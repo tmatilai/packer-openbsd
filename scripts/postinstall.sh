@@ -15,6 +15,9 @@ if [ $uname_r = 5.8 ]; then
     pkg_add sudo--
 elif [ $uname_r = 5.9 ]; then
     pkg_add sudo-1.8.15
+else
+    echo "Not installing sudo as your version isn't defined as requiring it in postinstall.sh"
+    exit 1
 fi
 
 # sudo
