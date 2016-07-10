@@ -14,7 +14,7 @@ else
   elif [ $uname_r = 5.5 ]; then
     pkg_add ruby-1.9.3.484p0
   else
-    pkg_add ruby
+    pkg_add ruby-1.8.7.374p5
   fi
 
   for f in ruby erb irb rdoc ri rake gem testrb \
