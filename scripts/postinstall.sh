@@ -14,7 +14,7 @@ echo "export PKG_PATH=\"$PKG_PATH\"" >> /home/vagrant/.profile
 if [ $uname_r = 5.8 ]; then
     pkg_add sudo--
 elif [ $uname_r = 5.9 ]; then
-    pkg_add sudo--
+    pkg_add sudo-1.8.15
 fi
 
 # sudo
