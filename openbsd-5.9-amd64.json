@@ -103,42 +103,6 @@
         "numvcpus": "1",
         "cpuid.coresPerSocket": "1"
       }
-    },
-    {
-      "type": "qemu",
-      "boot_command": [
-        "S<enter>",
-        "cat <<EOF >>install.conf<enter>",
-        "System hostname = openbsd59<enter>",
-        "Password for root = vagrant<enter>",
-        "Setup a user = vagrant<enter>",
-        "Password for user = vagrant<enter>",
-        "Allow root ssh login = yes<enter>",
-        "What timezone are you in = UTC<enter>",
-        "Location of sets = cd<enter>",
-        "Set name(s) = -game*.tgz -x*.tgz<enter>",
-        "Directory does not contain SHA256.sig. Continue without verification = yes<enter>",
-        "EOF<enter>",
-        "install -af install.conf && reboot<enter>"
-      ],
-      "boot_wait": "30s",
-      "disk_size": 10140,
-      "iso_checksum": "685262fc665425c61a2952b2820389a2d331ac5558217080e6d564d2ce88eecb",
-      "iso_checksum_type": "sha256",
-      "iso_url": "{{user `mirror`}}/pub/OpenBSD/5.9/amd64/install59.iso",
-      "output_directory": "packer-openbsd-5.9-amd64-qemu",
-      "ssh_username": "root",
-      "ssh_password": "vagrant",
-      "ssh_port": 22,
-      "ssh_wait_timeout": "10000s",
-      "shutdown_command": "/sbin/halt -p",
-      "vm_name": "openbsd-5.9-amd64",
-      "headless": true,
-      "qemu_binary": "qemu-system-x86_64",
-      "qemuargs": [
-        [ "-m", "384M" ],
-        [ "-smp", "cores=1,threads=1,sockets=1" ]
-      ]
     }
   ],
   "post-processors": [
