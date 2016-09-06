@@ -13,8 +13,12 @@ echo "export PKG_PATH=\"$PKG_PATH\"" >> /home/vagrant/.profile
 # install sudo on 5.8, required by Vagrant 1.7.4
 if [ $uname_r = 5.8 ]; then
     pkg_add sudo--
+elif [ $uname_r = 5.9 ]; then
+    pkg_add sudo-1.8.15
+else
+    echo "Not installing sudo as your version isn't defined as requiring it in postinstall.sh"
+    exit 1
 fi
 
 # sudo
 echo "vagrant ALL=(ALL) NOPASSWD: SETENV: ALL" >> /etc/sudoers
-
