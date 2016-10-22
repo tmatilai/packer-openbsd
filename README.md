@@ -9,13 +9,13 @@ Pre-built boxes can be installed via [Hashicorp Atlas](https://atlas.hashicorp.c
 Current:
 
 ```
-vagrant box add ryanmaclean/openbsd-5.9
+vagrant box add ryanmaclean/openbsd-6.0
 ```
 
 Older:
 
 ```
-vagrant box add tmatilai/openbsd-5.7
+vagrant box add ryanmaclean/openbsd-5.9
 ```
 
 You can also build the boxes yourself:
@@ -27,6 +27,16 @@ The boxes won't include VirtualBox Guest Additions nor VMware Tool
 (as they are not available for the OS). So for synced folders you need to use
 e.g. [NFS](https://docs.vagrantup.com/v2/synced-folders/nfs) or
 [rsync](https://docs.vagrantup.com/v2/synced-folders/rsync).
+
+## Chef and Ansible Support
+
+The images created by this script currently support Chef and/or Ansible installation at build time. 
+
+### Chef
+In order to have Chef installed in the Vagrant box, set `chef_version` (line 3) to either `prerelease` or `latest` in the json file for the version you are building. 
+
+### Ansible
+In order to have Ansible installed in the Vagrant box, set `vagrant_ansible` (line 8) to `yes` in the json file for your build. 
 
 ## License
 

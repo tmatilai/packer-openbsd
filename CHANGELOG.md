@@ -1,5 +1,17 @@
 # _Not released yet_
 
+# 2016-10-22
+
+## OpenBSD 6.0 - 1.0.0
+
+Changes from @ryanmaclean:
+
+- Add AMD64 template for OpenBSD 6.0
+- Ensure Ansible and Chef builds work with 6.0
+- Revise Chef install logic
+- Publish Atlas boxes for Virtualbox and VMware providers
+- Update readme.md with Chef and Ansible steps
+
 ## OpenBSD 5.8 - 1.0.0
 
 - Add templates for OpenBSD 5.8 (@dentarg)
