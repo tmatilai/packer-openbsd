@@ -22,5 +22,8 @@ else
     exit 1
 fi
 
+#install the normal flavour of `rsync`
+pkg_add -v rsync--
+
 # sudo
 echo "vagrant ALL=(ALL) NOPASSWD: SETENV: ALL" >> /etc/sudoers
