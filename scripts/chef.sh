@@ -18,6 +18,9 @@ else
   elif [ $uname_r = 6.0 ]; then
     pkg_add ruby-2.2.5p1
     version=22
+  elif [ $uname_r = 6.1 ]; then
+    pkg_add ruby-2.4.1
+    version=24
   else
     pkg_add ruby-1.8.7.374p5
     version=18

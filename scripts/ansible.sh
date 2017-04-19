@@ -6,7 +6,9 @@ if [ x$VAGRANT_ANSIBLE = x'yes' ]; then
 	. /root/.profile
 
 	uname_r=`uname -r`
-	if [ $uname_r = 6.0 ]; then
+	if [ $uname_r = 6.1 ]; then
+		pkg_add python-2.7.13p0
+	elif [ $uname_r = 6.0 ]; then
 		pkg_add python-2.7.12
 	elif [ $uname_r = 5.9 ]; then
 		pkg_add python-2.7.11
