@@ -1,5 +1,11 @@
 # _Not released yet_
 
+# 2017-04-19
+
+## OpenBSD 6.1 - 1.0.0
+
+- Add AMD64 template for OpenBSD 6.1 (@heichblatt)
+
 # 2016-10-22
 
 ## OpenBSD 6.0 - 1.0.0

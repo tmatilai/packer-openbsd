@@ -9,13 +9,13 @@ Pre-built boxes can be installed via [Hashicorp Atlas](https://atlas.hashicorp.c
 Current:
 
 ```
-vagrant box add ryanmaclean/openbsd-6.0
+vagrant box add ryanmaclean/openbsd-6.1
 ```
 
 Older:
 
 ```
-vagrant box add ryanmaclean/openbsd-5.9
+vagrant box add ryanmaclean/openbsd-6.0
 ```
 
 You can also build the boxes yourself:
