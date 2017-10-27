@@ -19,6 +19,8 @@ elif [ $uname_r = 6.0 ]; then
     pkg_add sudo-1.8.17.1
 elif [ $uname_r = 6.1 ]; then
     pkg_add sudo-1.8.19.2
+elif [ $uname_r = 6.2 ]; then
+    pkg_add sudo-1.8.21.2
 else
     echo "Not installing sudo as your version isn't defined as requiring it in postinstall.sh"
     exit 1
