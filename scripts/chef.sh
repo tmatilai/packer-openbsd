@@ -21,6 +21,9 @@ else
   elif [ $uname_r = 6.1 ]; then
     pkg_add ruby-2.4.1
     version=24
+  elif [ $uname_r = 6.2 ]; then
+    pkg_add ruby-2.4.2
+    version=24
   else
     pkg_add ruby-1.8.7.374p5
     version=18
@@ -31,7 +34,7 @@ else
       knife ohai shef; do
       ln -sf ${f}$version /usr/local/bin/$f
   done
-  ln -sf /usr/local/bin/testrb$version /usr/local/bin/testrb 
+  ln -sf /usr/local/bin/testrb$version /usr/local/bin/testrb
 
   if [ x$CHEF_VERSION == x'latest' ]; then
     gem install chef --no-ri --no-rdoc
